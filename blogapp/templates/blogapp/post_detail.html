@@ -1,0 +1,9 @@
+{% extends 'blogapp/base.html' %}
+{% block content %}
+    <a href="{% url 'post_edit' pk=post.pk %}">Edit</a>
+    <div class="title">{{ post.title }}</div>
+    {% if post.published_date %}
+        <div class="publication_date">Published: {{ post.published_date }}</div>
+    {% endif %}
+    <p>{{ post.text|linebreaksbr }}</p>
+{% endblock %}

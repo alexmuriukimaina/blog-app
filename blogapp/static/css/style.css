@@ -10,3 +10,8 @@
 .publication_date {
     font-size: large;
 }
+.plus_sign {
+    text-align: center;
+    font-size: larger;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}

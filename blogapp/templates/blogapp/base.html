@@ -1,0 +1,13 @@
+{% load static %}
+<html>
+    <head>
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+        <title>Home</title>
+    </head>
+<body>
+    <h1 class="mainheader"><a href="/">Home</a></h1>
+    <div class="plus_sign"><a href="{% url 'post_new' %}">Add story +</a></div>
+    {% block content %}
+    {% endblock %}
+</body>
+</html>
