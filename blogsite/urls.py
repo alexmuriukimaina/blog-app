@@ -19,4 +19,7 @@ from django.urls import include, path
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('blogapp.urls')),
+    # allows in-built authentication urls to be present
+    # all you have to do is add a folder called registration and add login.html and logged_out.html (check them out)
+    path('accounts/', include('django.contrib.auth.urls')),
 ]
